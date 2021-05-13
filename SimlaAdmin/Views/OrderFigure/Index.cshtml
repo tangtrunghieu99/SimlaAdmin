@@ -1,0 +1,62 @@
+﻿@model PagedList.IPagedList<SimlaAdmin.Models.Order>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+<div class="ibox">
+    <div class="ibox-head">
+        <div class="ibox-title">Danh sách đơn hàng</div>
+    </div>
+    <div class="ibox-body">
+
+         
+        <table class="table table-striped table-bordered table-hover" id="example-table" cellspacing="0" width="100%">
+            <thead>
+                <tr>
+                    <th>Mã vận đơn</th>
+                    <th>Ngày đặt</th>
+                    <th>Trạng thái</th>
+                    <th>Tổng tiền</th>
+                    <th>Chức năng</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>@item.Code</td>
+                    <td>@item.Date</td>
+
+                    @{
+                        string tt = "";
+                        if (item.Status == "0")
+                        {
+                            tt = "Chuẩn bị ";
+                        }
+                        else if (item.Status == "1")
+                        {
+                            tt = "Đang giao";
+                        }
+                        else if (item.Status == "2")
+                        {
+                            tt = "Đã giao";
+                        }
+                        else
+                        {
+                            tt = "Hủy đơn hàng";
+                        }
+                        <td>@tt</td>
+                    }
+                    <td>@item.Total</td>
+                    <td><a href="/OrderFigure/Edit/?Code=@item.Code">Chỉnh sửa</a></td>
+
+                </tr>
+                }
+            </tbody>
+        </table>
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+    </div>
+</div>
+

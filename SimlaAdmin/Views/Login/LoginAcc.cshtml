@@ -1,0 +1,43 @@
+﻿
+@model SimlaAdmin.Models.LoginModel
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Đăng nhập</title>
+    <link href="~/Assets/Client/Css/LG.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<body>
+
+    @using (Html.BeginForm("Login", "Login", FormMethod.Post))
+    {
+
+        <div class="Bo">
+            <div class="Log">
+                <center><label class="Tit">Đăng nhập</label></center>
+                @Html.ValidationSummary(false, "", new { @class = "text-danger" });
+                <div class="Acc">
+                    <div class="Inv">
+                        @Html.TextBoxFor(Model => Model.userName, new { @class = "Inv", @id = "TK", @autofocus = "autofocus" })
+                        <br><br>
+                        @Html.PasswordFor(Model => Model.passWord, new { @class = "Inv", @id = "MK", @autofocus = "autofocus" })
+                    </div>
+                </div>
+                @*<input name="chkGiuDangNhap" type="checkbox" id="chkGDN">*@
+                <div style="padding-top:40px">
+                    @Html.CheckBoxFor(Model => Model.rememberMe, new { @class = "", @id = "GDN" })
+                    <label id="lableDN">
+                        Giữ cho tôi luôn đăng nhập
+                    </label>
+                </div>
+                <center><button type="submit" name="sumbmit" value="ĐĂNG NHẬP" class="Subm">ĐĂNG NHẬP</button></center>
+            </div>
+        </div>
+    }
+
+</body>
+</html>
+

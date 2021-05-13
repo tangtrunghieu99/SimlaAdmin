@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Đăng nhập | Starwars Company</title>
+<link href="../../Css/LG.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="../../Js/LG.js"></script> 
+</head>
+
+<body>
+	<form method="post" name="frmLogin" onSubmit="return Check()">
+		<div class="Bo">
+			<div class="Log">
+				<center><label class="Tit">Đăng Nhập</label></center>
+					<div class="Acc">
+						<div class="Inv">
+								<input name="txtTaiKhoan" type="text" autofocus="autofocus" class="Inv" id="TK" placeholder="Nhập Tên Đăng Nhập" size="28"><br><br>
+								<input name="txtMatKhau" type="password" autofocus="autofocus"  id="MK" placeholder="Nhập Mật Khẩu" size="28">
+						</div>
+					</div>
+				<input name="chkNhoTaiKhoan" type="checkbox" id="GDN"><label id="lblGDN">Nhớ Tên Đăng Nhập</label>
+				<center><input type="submit" name="submit" value="Đăng Nhập" class="Subm"></center>
+			</div>
+		</div>
+	</form>
+</body>
+</html>

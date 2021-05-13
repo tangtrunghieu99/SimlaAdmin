@@ -1,0 +1,205 @@
+@charset "utf-8";
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+.Top
+{
+	background: #007700;
+	width: 100%;
+	height: 10px;
+	
+}
+.Menu
+{
+	font-family:  Times, "Times New Roman", "serif";
+	background: black;
+	color:white;
+	text-align: center;
+	height: 100px;
+}
+.Menu ul
+{
+	list-style: none;
+}
+.Menu ul img
+{
+	width: 120px;
+	height: 100px;
+	float: left;
+}
+.Menu ul li
+{
+	position: relative;
+	width: 200px;
+	list-style: none;
+	float: left;
+	left: 0px;
+	
+}
+.Menu ul li a
+{
+	text-decoration: none;
+	color: white;
+	padding: 40px 20px;
+	display: block;
+	text-align: center;
+}
+.Menu ul li>.Menu-ex{
+	background: black;
+	display: none;
+}
+.Menu ul li a:hover
+{
+	color:black;
+	background: white;
+	
+}
+.Menu ul li:hover >.Menu-ex
+{
+	position: absolute;
+	display: block;
+
+}
+.banner
+{
+	
+	background: url("../Picture/HomePage/FY19 Summer 1_tcm90-50071.jpg");
+	background-size: 100% 400px;
+	background-repeat: repeat-x,no-repeat;
+	width: 100%;
+	height: 400px;
+}
+.main{
+	width:100%;
+	min-height: 300px;
+	background-color:#F5F5F5;
+	color:#000000;
+	float: left;
+	margin-bottom: 5px;
+	padding-left: 30px;
+}
+.main h2
+{
+	margin-left: 30px;
+	color:#007700;
+	width:75%;
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+.main h3
+{
+	margin-top: 20px;
+	margin-left: 30px;
+	width:75%;
+	font-size:25px;
+	font-weight: bold;
+}
+.main h5
+{
+
+	margin-left: 30px;
+	width:75%;
+	font-size:17px;
+	font-weight: normal;
+}
+.main h4
+{
+	margin-top: 20px;
+	margin-left: 30px;
+	width:75%;
+	font-size:20px;
+	font-weight: bold;
+	
+}
+.main img{
+	margin-left: 30px;
+}
+.main ul{
+	margin-top: 20px;
+	margin-left: 100px;
+	list-style: circle;
+	width:75%;
+}
+.main ul li
+{
+	margin: 10px 0px 10px 0px;
+}
+.footer
+{
+	margin-top: 85px;
+	width: 100%;
+	height: 280px;
+	background: white;
+	float: left;
+}
+
+.footer img
+{
+
+	width: 200px;
+	height: 280px;
+	float: left;
+
+}
+.footer .text
+{
+	margin: 35px 0px 0px 50px;
+	float: left;
+	width: 300px;
+	height: 30px;
+	font-size: 18px;
+	color:#007700;
+	font-weight: bold;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+.footer .if
+{
+	height: 130px;
+	width: 255px;
+	float: left;
+	font-size: 18px;
+	margin-left: -300px;
+    margin-top: 80px;
+    color: black;
+    
+}
+.footer .Fl
+{
+	color:#007700;
+	float:left;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 35px 0px 0px 50px;
+	width:300px;
+	height: 30px;
+	
+}
+.footer .Fl img
+{
+	margin: 20px 0px 0px 20px;
+	height: 50px;
+	width: 50px;
+}
+.footer .right img
+{
+	
+	transform: rotate(270deg);
+	float:right;
+	margin-right: 100px;
+}
+.footer .company
+{
+	margin-top: 270px;
+	border: 1px solid #313131;
+	width: 100%;
+	background: #007700;
+	
+}
+<h2>Cà phê được Vun trồng có Trách nhiệm</h2>
+		<h3>Chúng tôi thực hiện phương pháp tiếp cận vấn đề tìm nguồn cung ứng cà phê một cách có đạo đức thông qua các nguyên tắc thu mua có trách nhiệm, các khoản vay dành cho người nông dân và các chương trình bảo tồn rừng.</h3>
+		<h5>Khi mua cà phê theo cách này, chúng tôi giúp nuôi dưỡng một tương lai tốt đẹp hơn cho người nông dân và một nền khí hậu ổn định hơn cho trái đất, đồng thời cũng tìm được một nguồn cung ứng lâu dài với các loại hạt cà phê có chất lượng cao mà chúng tôi đã cẩn thận pha trộn, rang và đóng gói tươi ngon trong hơn bốn mươi năm qua.</h5>
+		<h5>Hơn một thập kỷ qua, Tổ chức Bảo tồn Quốc tế đã giúp chúng tôi phát triển các nguyên tắc thu mua có khả năng giải quyết vấn đề cơ bản về tìm nguồn cung ứng có đạo đức của chúng tôi. Được gọi là Thông lệ về Công bằng cho Người nông dân và Cà phê (C.A.F.E.) , những nguyên tắc này giúp người nông dân trồng cà phê theo cách tốt hơn cho cả con người và hành tinh. Thông lệ về C.A.F.E. là một bộ các tiêu chuẩn đo lường hoàn chỉnh, tập trung vào bốn lĩnh vực sau:</h5>
+		<h4>Chất lượng Sản phẩm (yêu cầu):</h4>

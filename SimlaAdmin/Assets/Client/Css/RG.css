@@ -1,0 +1,28 @@
+@charset "utf-8";
+body
+{
+	background: url(../Picture/Log/jack-finnigan-535415-unsplash.jpg) no-repeat;
+	background-size: cover;
+}
+.Bo
+{
+	margin-top: 10px;
+}
+.Tit
+{
+	color:#007700;
+	text-align: center;
+	font-size: 60px;
+	
+}
+table tbody tr td
+{
+	color: #007700;
+	font-size: 20px;
+	font-weight: bold;
+}
+::placeholder
+{
+	color: gray;
+	opacity: 0.7;
+}
